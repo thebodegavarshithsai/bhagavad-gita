@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import Navbar from './Components/Home/Navbar';
+import Home from './Components/Home/Home';
 import './App.css';
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Chapter from './Components/Chapters/Chapter';
+import Quotes from './Components/Quotes/Quotes';
+import About from './Components/About_Gita/About';
+import EachChapter from './Components/EachChapter/EachChapter';
+import Verses from './Components/Verses/Verses';
+
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Navbar/>
+        <Routes>
+
+          <Route path='/chapters' element={<Chapter  />}/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/quotes' element={<Quotes/>}/>
+          <Route path='/about' element={<About/>} />
+          <Route path="/chapter/:id" element={<EachChapter />}/>
+          <Route path="/chapter/:id" element={<Verses/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

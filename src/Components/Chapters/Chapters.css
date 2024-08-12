@@ -1,0 +1,59 @@
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.chaptergrid{
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: 50% 50%;
+  /* border: 2px solid black; */
+  padding-top: 40px;
+}
+.eachchapter{
+  /* border: 1px solid red; */
+  height: 250px;
+  margin-top: 40px;
+  margin: 20px;
+  text-align: left;
+  /* box-shadow: 0px 8px 18px rgb(89, 89, 89); */
+  box-shadow: 0px 1px 14px orange;
+  border-radius: 20px;
+  /* transition: transform 0.4s ; */
+  transition: background-color 0.3s;
+  padding: 5px;
+
+}
+.eachchapter:hover{
+  cursor: pointer;
+  background-color:rgb(247, 243, 217) ;
+  border: 1px solid rgb(244, 189, 117);
+  /* transform: scale(1.03); */
+}
+
+.eachchapter h1,h3{
+  margin-left: 13px;
+}
+.eachchapter h1{
+  color: rgb(245 121 3);
+  font-size: 17px;
+}
+.eachchapter h3{
+  margin-top: -10px;
+  font-size: 20px;
+
+}
+
+.summary{
+  /* border: 1px solid black; */
+  height: 108px;
+  margin-top: -10px;
+  padding-right: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+p{
+  margin-left: 10px;
+}

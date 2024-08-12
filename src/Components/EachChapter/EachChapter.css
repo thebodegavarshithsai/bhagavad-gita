@@ -1,0 +1,73 @@
+.wholechapter{
+  margin-top: 102px;
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  
+}
+.wholechapter::before{
+  content:" " ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../Images/kurukshetra.jpg);
+  inset: 0;
+  position: absolute;
+  opacity: 0.5;
+ 
+
+}
+
+
+
+.chapterintro{
+  margin-bottom: 60px;
+  width: 970px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  height: 400px;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+
+
+
+.chapterintro h2{
+  color:rgb(245 121 3) ;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: -15px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.chapterintro h1{
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 40px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.chapterintro p{
+  font-size:20px;
+  font-style:oblique;
+  line-height: 35px;
+  font-weight: bolder;
+  position: absolute;
+  padding: 0px 20px;
+  top: 110px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}

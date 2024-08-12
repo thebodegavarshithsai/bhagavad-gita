@@ -1,0 +1,24 @@
+.versecontainer{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 900px;
+  padding: 3px 20px 20px 20px;
+  text-align: center;
+  box-shadow: 0px 2px 13px rgb(66, 66, 66);
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  transition: transform 0.4s;
+  position: relative;
+  font-weight: bolder;
+  background-color: rgba(235, 235, 198,0.4);
+ 
+}
+.versecontainer h3{
+  color: orangered;
+}
+
+.versecontainer:hover{
+  background-color: rgba(235, 235, 198,0.8);
+  cursor: pointer;
+  transform: scale(1.05);
+}
