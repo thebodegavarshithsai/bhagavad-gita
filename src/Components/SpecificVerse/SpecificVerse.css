@@ -1,0 +1,75 @@
+.specificverse-container{
+  margin-top:100px ;
+  padding-bottom: 50px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-top: 50px;
+  
+}
+
+.specificverse-container::before{
+  content:" " ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../Images/krishna.jpeg);
+  inset: 0;
+  position: absolute;
+  opacity: 0.3;
+  background-position: right 40px ;
+  background-position-x: center;
+  
+}
+
+.specificverse{
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  position: relative;
+  box-shadow: 0px 4px 15px black;
+  border-radius: 20px;
+}
+
+.specificverse h1{
+  /* border: 1px solid blue; */
+  position: relative;
+}
+.specificverse h3{
+  /* border: 1px solid green; */
+  position: relative;
+  color: orangered;
+  line-height: 35px;
+
+}
+.english{
+  font-style: italic;
+  font-weight: bold;
+  position: relative;
+  line-height: 30px;
+  color: black;
+  font-size: 20px;
+
+
+}
+.meaning{
+  padding: 0px 30px;
+  position: relative;
+  font-weight: bold;
+  line-height: 25px;
+  font-size: 17px;
+}
+.purport{
+  padding: 0px 30px;
+  position: relative;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 20px;
+}
+.wordmeaning{
+  font-size: 16px;
+  padding: 0px 50px;
+}

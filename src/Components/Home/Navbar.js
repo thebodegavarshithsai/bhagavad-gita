@@ -29,7 +29,7 @@ const Navbar = () => {
             {menu==="quotes"?<hr></hr>:<></>}
           </li>
           <li onClick={()=>setMenu("aboutgita")}>
-            <Link to="/about" style={{textDecoration:"none",color:"black"}}>About Gita</Link>
+            <Link to="/about" style={{textDecoration:"none",color:"black"}}>Explore</Link>
             {menu==="aboutgita"?<hr></hr>:<></>}
           </li>
         </ul>

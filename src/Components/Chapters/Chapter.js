@@ -23,10 +23,10 @@ const Chapter = () => {
                 <center>
                 <Link style={{textDecoration:"none",color:"black"}} to={`/chapter/${item.chapter_number}`}>
                 <div  className='eachchapter'>
-                <h1>Chapter {item.chapter_number}</h1>
+                <h1>{`Chapter ${item.chapter_number}`}</h1>
                 <h3>{item.translation}</h3>
                 <div className='summary'><p>{item.summary.en}</p></div>
-                <p>{item.verses_count} Verses</p>
+                <p> {`${item.verses_count} Verses`}</p>
                 </div>
                 </Link>
                

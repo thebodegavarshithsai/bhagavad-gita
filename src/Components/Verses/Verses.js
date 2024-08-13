@@ -2,6 +2,8 @@ import React,{useState,useEffect} from 'react'
 import axios from "axios"
 import "./Verses.css"
 import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
 const Verses = () => {
     const{id}=useParams()
     const[verses,setVerses]=useState([])
@@ -12,7 +14,7 @@ const Verses = () => {
       try {
         const data = [];
         for (let i = 1; i <= verses_count[id - 1]; i++) {
-          data.push(axios.get(`https://vedicscriptures.github.io/slok/${id}/${i}/`).then(res => res.data.prabhu.et));
+          data.push(axios.get(`https://vedicscriptures.github.io/slok/${id}/${i}/`).then(res => res.data));
         }
         const allVerses = await Promise.all(data);
         setVerses(allVerses);
@@ -31,10 +33,13 @@ const Verses = () => {
       {
         verses.map((item,index)=>{
           return(
-            <div key={index} className='versecontainer'>
+            <Link to={`/chapter/${item.chapter}/${item.verse}`} style={{textDecoration:"none",color:"black"}}>
+              <div key={index} className='versecontainer'>
               <h3>{`Verse ${index+1}`}</h3>
-              <p>{item}</p>
+              <p>{item.prabhu.et}</p>
             </div>
+            </Link>
+            
             
           )
         }

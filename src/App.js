@@ -7,6 +7,9 @@ import Quotes from './Components/Quotes/Quotes';
 import About from './Components/About_Gita/About';
 import EachChapter from './Components/EachChapter/EachChapter';
 import Verses from './Components/Verses/Verses';
+import SpecificVerse from './Components/SpecificVerse/SpecificVerse';
+
+
 
 
 function App() {
@@ -23,6 +26,7 @@ function App() {
           <Route path='/about' element={<About/>} />
           <Route path="/chapter/:id" element={<EachChapter />}/>
           <Route path="/chapter/:id" element={<Verses/>}/>
+          <Route path='/chapter/:ch/:sl' element={<SpecificVerse/>} />
         </Routes>
       </BrowserRouter>
     </div>
