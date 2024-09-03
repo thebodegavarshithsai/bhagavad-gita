@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className='navbar'>
         <div className='left-section'>
           <img className='krishna-img' src={radhakrishna}></img>
-          <h2>Bhagavad Gita</h2>
+          <h2>Sanatana Dharma</h2>
         </div>
        
         <ul className='middle-section'>
