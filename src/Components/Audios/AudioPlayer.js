@@ -1,15 +1,14 @@
-import React from 'react'
-import yadayada from "../Audios/yadayada.mp3"
-import "./AudioPlayer.css"
+import React from 'react';
 
-class AudioPlayer extends React.Component {
-  render() {
-    return (
-      <div>
-        <audio className='audiodiv' ref="audio_tag" src={yadayada} loop controls autoPlay/>
-      </div>
-    );
-  }
-}
+const AudioPlayer = () => {
+  return (
+    <div>
+      <audio controls>
+        <source src="/audio/your-audio-file.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  );
+};
 
 export default AudioPlayer;
